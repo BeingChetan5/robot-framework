@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-09-14T16:02:24.315947" rpa="false" schemaversion="5">
+<suite id="s1" name="Main" source="C:\Users\HP\Desktop\Chetan\robot-framework\tests\main.robot">
+<test id="s1-t1" name="TC_001_" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-14T16:02:24.915921" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/'.</msg>
+<msg time="2024-09-14T16:02:26.397484" level="WARN">The chromedriver version (127.0.6533.88) detected in PATH at C:\Users\HP\Desktop\Chetan\robot-framework\drivers\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.137); currently, chromedriver 128.0.6613.137 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-14T16:02:24.915921" elapsed="221.958252"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2024-09-14T16:06:06.923146" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.137)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7625A9632+30946]
+	(No symbol) [0x00007FF76255E3C9]
+	(No symbol) [0x00007FF762456FDA]
+	(No symbol) [0x00007FF76242CB85]
+	(No symbol) [0x00007FF7624D37A7]
+	(No symbol) [0x00007FF7624EA771]
+	(No symbol) [0x00007FF7624CC813]
+	(No symbol) [0x00007FF76249A6E5]
+	(No symbol) [0x00007FF76249B021]
+	GetHandleVerifier [0x00007FF7626DF83D+1301229]
+	GetHandleVerifier [0x00007FF7626EBDB7+1351783]
+	GetHandleVerifier [0x00007FF7626E2A03+1313971]
+	GetHandleVerifier [0x00007FF7625DDD06+245686]
+	(No symbol) [0x00007FF76256758F]
+	(No symbol) [0x00007FF762563804]
+	(No symbol) [0x00007FF762563992]
+	(No symbol) [0x00007FF76255A3EF]
+	BaseThreadInitThunk [0x00007FFC397E7034+20]
+	RtlUserThreadStart [0x00007FFC3A102651+33]
+</msg>
+<msg time="2024-09-14T16:06:06.953140" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.137)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7625A9632+30946]
+	(No symbol) [0x00007FF76255E3C9]
+	(No symbol) [0x00007FF762456FDA]
+	(No symbol) [0x00007FF76242CB85]
+	(No symbol) [0x00007FF7624D37A7]
+	(No symbol) [0x00007FF7624EA771]
+	(No symbol) [0x00007FF7624CC813]
+	(No symbol) [0x00007FF76249A6E5]
+	(No symbol) [0x00007FF76249B021]
+	GetHandleVerifier [0x00007FF7626DF83D+1301229]
+	GetHandleVerifier [0x00007FF7626EBDB7+1351783]
+	GetHandleVerifier [0x00007FF7626E2A03+1313971]
+	GetHandleVerifier [0x00007FF7625DDD06+245686]
+	(No symbol) [0x00007FF76256758F]
+	(No symbol) [0x00007FF762563804]
+	(No symbol) [0x00007FF762563992]
+	(No symbol) [0x00007FF76255A3EF]
+	BaseThreadInitThunk [0x00007FFC397E7034+20]
+	RtlUserThreadStart [0x00007FFC3A102651+33]
+</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="FAIL" start="2024-09-14T16:06:06.880141" elapsed="0.237996">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.137)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7625A9632+30946]
+	(No symbol) [0x00007FF76255E3C9]
+	(No symbol) [0x00007FF762456FDA]
+	(No symbol) [0x00007FF76242CB85]
+	(No symbol) [0x00007FF7624D37A7]
+	(No symbol) [0x00007FF7624EA771]
+	(No symbol) [0x00007FF7624CC813]
+	(No symbol) [0x00007FF76249A6E5]
+	(No symbol) [0x00007FF76249B021]
+	GetHandleVerifier [0x00007FF7626DF83D+1301229]
+	GetHandleVerifier [0x00007FF7626EBDB7+1351783]
+	GetHandleVerifier [0x00007FF7626E2A03+1313971]
+	GetHandleVerifier [0x00007FF7625DDD06+245686]
+	(No symbol) [0x00007FF76256758F]
+	(No symbol) [0x00007FF762563804]
+	(No symbol) [0x00007FF762563992]
+	(No symbol) [0x00007FF76255A3EF]
+	BaseThreadInitThunk [0x00007FFC397E7034+20]
+	RtlUserThreadStart [0x00007FFC3A102651+33]
+</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>ABOUT US</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-09-14T16:06:07.119136" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"verified"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-09-14T16:06:07.120139" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>xpath=//span[text()='TUTORIAL ']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-09-14T16:06:07.121137" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Testing World, being a reputed software testing training institute in Noida</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-09-14T16:06:07.122136" elapsed="0.000000"/>
+</kw>
+<doc>Test case to open chrome browser</doc>
+<tag>100</tag>
+<tag>sanity</tag>
+<status status="FAIL" start="2024-09-14T16:02:24.912929" elapsed="222.210214">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.137)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7625A9632+30946]
+	(No symbol) [0x00007FF76255E3C9]
+	(No symbol) [0x00007FF762456FDA]
+	(No symbol) [0x00007FF76242CB85]
+	(No symbol) [0x00007FF7624D37A7]
+	(No symbol) [0x00007FF7624EA771]
+	(No symbol) [0x00007FF7624CC813]
+	(No symbol) [0x00007FF76249A6E5]
+	(No symbol) [0x00007FF76249B021]
+	GetHandleVerifier [0x00007FF7626DF83D+1301229]
+	GetHandleVerifier [0x00007FF7626EBDB7+1351783]
+	GetHandleVerifier [0x00007FF7626E2A03+1313971]
+	GetHandleVerifier [0x00007FF7625DDD06+245686]
+	(No symbol) [0x00007FF76256758F]
+	(No symbol) [0x00007FF762563804]
+	(No symbol) [0x00007FF762563992]
+	(No symbol) [0x00007FF76255A3EF]
+	BaseThreadInitThunk [0x00007FFC397E7034+20]
+	RtlUserThreadStart [0x00007FFC3A102651+33]
+</status>
+</test>
+<doc>Simple Robot file (Suite)</doc>
+<status status="FAIL" start="2024-09-14T16:02:24.320933" elapsed="222.807208"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">100</stat>
+<stat pass="0" fail="1" skip="0">sanity</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Main">Main</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-14T16:02:26.397484" level="WARN">The chromedriver version (127.0.6533.88) detected in PATH at C:\Users\HP\Desktop\Chetan\robot-framework\drivers\chromedriver.exe might not be compatible with the detected chrome version (128.0.6613.137); currently, chromedriver 128.0.6613.137 is recommended for chrome 128.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-09-14T16:06:06.923146" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.137)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7625A9632+30946]
+	(No symbol) [0x00007FF76255E3C9]
+	(No symbol) [0x00007FF762456FDA]
+	(No symbol) [0x00007FF76242CB85]
+	(No symbol) [0x00007FF7624D37A7]
+	(No symbol) [0x00007FF7624EA771]
+	(No symbol) [0x00007FF7624CC813]
+	(No symbol) [0x00007FF76249A6E5]
+	(No symbol) [0x00007FF76249B021]
+	GetHandleVerifier [0x00007FF7626DF83D+1301229]
+	GetHandleVerifier [0x00007FF7626EBDB7+1351783]
+	GetHandleVerifier [0x00007FF7626E2A03+1313971]
+	GetHandleVerifier [0x00007FF7625DDD06+245686]
+	(No symbol) [0x00007FF76256758F]
+	(No symbol) [0x00007FF762563804]
+	(No symbol) [0x00007FF762563992]
+	(No symbol) [0x00007FF76255A3EF]
+	BaseThreadInitThunk [0x00007FFC397E7034+20]
+	RtlUserThreadStart [0x00007FFC3A102651+33]
+</msg>
+</errors>
+</robot>
